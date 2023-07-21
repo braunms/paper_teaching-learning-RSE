@@ -87,7 +87,7 @@ RSEs share a set of core skills that are required to write software, understand
 the research environment and ensure that they produce sustainable, maintainable
 code that supports reproducible research outputs. They are the ones who
 implement the FAIR principles that make digital research output more valuable.
-In order to do so the draw upon skills from traditional software engineering,
+In order to do so they draw upon skills from traditional software engineering,
 established research culture and a commitment to being part of a team.
 
 Developing and maintaining these skills is time consuming and often challenging.
@@ -197,7 +197,7 @@ best practices, modern software design [@LRZModernCpp], project management and
 version control [@LRZIntroCpp].
 
 #### Helmholtz
-As part of its push towards a better RSE environment, the Helmholtz Association launched the Helmholtz Federated IT Services platform (HIFIS) [@HIFIS] which provides educational material and trainings amongst other services for an audience of over 10.000 scientists in Germany and internationally.
+As part of its push towards a better RSE environment, the Helmholtz Association launched the Helmholtz Federated IT Services platform (HIFIS) [@HIFIS] which provides educational material and trainings amongst other services for an audience of over 10,000 scientists in Germany and internationally.
 All of these materials focus on RSE basics to refresh and expand the software engineering knowledge for recent graduates or to update the existing knowledge in established researchers.
 They are published under OER licenses and can serve as either self-learning instructions or form the basis of a hands-on training.
 To allow these educational offers to be easier brought to the scientists, the Helmholtz Information and Data Science Academy (HIDA) [@HIDA] sustains a large network within the Helmholtz Association and beyond with a strong focus on graduate schools.
@@ -467,7 +467,7 @@ Some explanation of the team sizes:
 |       | individual | small team | organization  |
 | ----  | ------ | ------ | --- |
 | DOCBB |   you might get away with less satisfactory code, as long as the product is OK | think about your colleagues    | your organization most likely has guides here |
-| LIBS  |   you will only be successful if your artifact is usable by others    |  same here   | your organization probably has rules here |
+| LIBS  |   you will only be successful if your artefact is usable by others    |  same here   | your organization probably has rules here |
 | MOD   | you should precisely know what your entire code is doing where | you should know what your part is doing and have a feeling about the others contributions | You should know what your small part is doing |
 | SWLC  | it's you and your software | You should know the Bus factor | The organization takes care of that |
 |SWREPOS|   you need academic credit.    |   same here    | your organization probably has rules here |
@@ -519,10 +519,22 @@ and can assist domain scientists who have excellent command of scripting languag
 but only a cursory understanding of compiled languages get up to speed with
 compiled software.
 
+#### ML-RSE
+Machine learning (ML) is becoming increasingly important in many areas of research.
+Due to its complexity, it requires specialized theoretical background, and experienced handling of appropriate software and hardware are necessary in ordr to produce meaningful results.
+The specialization of ML-RSEs involve the skills of Machine Learning Engineers and Machine Learning Scientists.
+In detail those skills imply knowledge about data analysis and feature engineering, metrics that are involved in ML, ML algorithm selection and cross validation, and knowledge in math and statistics.
+ML-RSEs analyse and check the suitability of an algorithm if it fulfills the needs of the current task, and they play a main role in deciding and selecting machine learning libraries for a given task.
+FIXME: Improve and extend, relation to 'Data-focused RSE', add something about ethics/values
+
 #### Research Infrastructure RSE
-This RSE is interested in SysOps and sets up infrastructures for and with researchers.
-This RSE, therefore, requires a deep knowledge of physical computer and network hardware.
-FIXME: While required, is this an RSE? this sets off the usual infrastructure vs. research discussion....
+This RSE is interested in SysOps and system administration and sets up infrastructures for and with researchers.
+Therefore, this specialization on the one hand requires a deep knowledge of physical computer and network hardware, on the one hand knowledge about setup and configuration of software services which run on servers is essential.
+The necessity for such RSEs arises from the need for special domain specific IT services that are not available otherwise, e.g. not provided by the central IT services of a university.
+Such a service could be an cluster of compute servers for GPU based machine learning.
+Those RSEs may also provide services that are based on existing IT infrastructure of a university, e.g. configure virtual machines on hypervisors run by the university.
+They operate as an interface between the researchers and the service, by taking care of the user management, access permissions, and configuration of a service but not the actual maintenance of server.
+Additionally, teaching other researchers in how to use such specialized services could be part of their responsibility.
 
 #### Web-Development RSE
 This RSE is skilled in web applications, front- and/or backend, and/or building 
@@ -565,11 +577,12 @@ While software is the lingua franca of all RSEs there will be RSEs that have spe
 ### Optional RSE competencies -> Maintenance RSEs 
 Oftentimes, a significant amount of effort in (research) software development needs to be spent on maintenance to ensure that software remains useful for researchers now and in the future.
 The research environment is constantly changing and this can also apply to the software requirements.
-Accordingly, software often needs to be adapted continuously. If it isn't, the software can reach a point where it simply isn't useful to the researchers anymore.
-To avoid this, regular work needs to be invested. 
-While ensuring maintenance and sustainability of research software is of huge importance to the communities that build and use it, a particular challenge is that it's often very difficult to obtain ongoing research funding for software maintenance tasks. As a result, when a project that developed or extended a piece of software finishes, it can often be the case that support for the software fades as team members move on to other research, academic or RSE roles, or become busy with other funded work.
+If software is not properly maintained, it becomes increasingly difficult to install and use. 
+At some point, the software is no longer available and cannot be used to reproduce results.
+While ensuring maintenance and sustainability of research software is of huge importance to the communities that build and use it, a particular challenge is that it's often very difficult to obtain ongoing research funding for software maintenance tasks. 
+As a result, when a project that developed or extended a piece of software finishes, support for the software fades as team members move on to other research, academic or RSE roles, or become busy with other funded work.
 While this is not a core concern of this paper, we wanted to highlight this important issue that is frequently faced when working with software in the research community.
-With regard to which additional competency is required, these are people having experience with ancient software stacks that are not anymore part of the general curricula(think of COBOL and FORTRAN).
+With regard to which additional competency is required, these are people having experience with ancient software stacks that are not anymore part of the general curricula (think of COBOL and FORTRAN).
 
 FIXME: I think it would be nice if we could move each of these optional competencies to a different specialization.
 
