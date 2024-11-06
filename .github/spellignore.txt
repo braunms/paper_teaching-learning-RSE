@@ -6,6 +6,8 @@ artifacts
 aspirational
 backend
 Badging
+Bernhard
+BibTeX
 BioExcel
 BIOEXCEL-FRAMEWORK
 bioinformatician
@@ -22,10 +24,12 @@ Center
 CHAOSS
 citable
 codebase
+codebases
 CodeMeta
 CodeRefinery
-comp-lvls-se
+comp-lvls-techn
 Coursera
+CRediT
 CRSP
 CSE
 curation
@@ -35,6 +39,8 @@ DaLiJe
 de
 deRSE
 DFG
+Diátaxis
+didactics
 DigComp
 DigCompEdu
 DigCompOrg
@@ -42,6 +48,7 @@ DigiFlex
 digitalisation
 DigitalSkillsGap
 distributable
+DLR
 DMP
 DOCBB
 DOMREP
@@ -54,6 +61,7 @@ EMBL-EBI
 eng
 ENCCS
 EOR
+epistemically
 Erlangen-Nürnberg
 ERuDIte
 EuroCC
@@ -63,6 +71,7 @@ exascale
 ExCALIBUR
 EXCELERATE
 executables
+explainability
 FAIRness
 FAU
 findability
@@ -72,6 +81,7 @@ Forschung
 Friedrich
 Fortran
 franca
+frontend
 funders
 FutureUniversity
 genomic
@@ -82,6 +92,7 @@ GPL
 habilitation
 HAI
 Hannay
+Hasselbring
 HIDA
 HIFIS
 HMC
@@ -91,8 +102,11 @@ HPC-CF
 HPC-oriented
 HTC
 IDEs
+IEA
 Ing
+interpretability
 ISCB
+iteratively
 Jena
 JOSS
 JU
@@ -102,6 +116,7 @@ KSA
 KSAs
 LIBS
 lingua
+linters
 LLM
 LLMs
 LRZIntroCpp
@@ -128,6 +143,8 @@ PhDs
 PRACE
 pre-recorded
 pre-requisite
+proactivity
+profilers
 proto
 PRs
 RDM
@@ -142,8 +159,11 @@ RSE
 RSE's
 rse-specialisations
 RTPs
+Rumpe
+scalable
 scipy
 SeniorCC
+SEs
 SRU
 SSI
 sth
@@ -157,10 +177,12 @@ SysOps
 tbl
 TeSS
 teams-se
+TRLs
 TrainingMaterial
 UofO
 un-deRSE
 US-RSE
 WIP
 Wissenschaft
+Würzburg
 Zenodo

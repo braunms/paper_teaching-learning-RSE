@@ -1,18 +1,18 @@
-# Paper: Teaching and Learning Research Software Engineering
+# The teachingRSE project: "Teaching and Learning Research Software Engineering" [![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 
-Output of the de-RSE 2023 Conference Workshop on "Teaching and Learning Research Software Engineering".
+It started all at a workshop at deRSE23 in Paderborn where the community came together to discuss what to teach to future RSEs
+and in which institutions to bring up the next generation of RSEs.
 
-Since the original idea grew in size and scope we had to split the paper in different subpapers highlighting different aspects
+As we discovered, the scope of this task is so big that 
+we had to split the paper in different subpapers highlighting different aspects
 
 Get the latest version of the respective PDF files here:
 
 * "Foundational competencies and responsibilities of an RSE" ([competencies.pdf](https://github.com/CaptainSifff/paper_teaching-learning-RSE/blob/build/competencies.pdf))
 * "Institutionalized Organisation of RSE Education" ([institutionalised_education.pdf](https://github.com/CaptainSifff/paper_teaching-learning-RSE/blob/build/institutionalised_education.pdf))
+* A separate web project on surveying and curating existing resources, the [learn-and-teach project](https://github.com/DE-RSE/learn-and-teach)  [website](https://de-rse.org/learn-and-teach/)
 * "A Survey of Initiatives Providing Educative Material in the RSE Space" ([survey.pdf](https://github.com/CaptainSifff/paper_teaching-learning-RSE/blob/build/survey.pdf))
 * "Educating RSEs in Germany - What Needs to Be Done" ([call_to_action.pdf](https://github.com/CaptainSifff/paper_teaching-learning-RSE/blob/build/call_to_action.pdf))
-
-Older:
-* "Teaching and Learning Research Software Engineering" ([intro.pdf](https://github.com/CaptainSifff/paper_teaching-learning-RSE/blob/build/intro.pdf))
 
 ## How to contribute - Some of our rules
 
@@ -23,6 +23,10 @@ This paper is intended as a collaborative effort and we are looking for input fr
 **Please utilise semantic line breaks!**
 
 **We use British English**
+
+**We have regular meetings, out meeting notes can be found here: https://pad.gwdg.de/s/pVBQ3Sh7Z#**
+
+**If you want to get notified of our calls, and participate in the discussion by E-Mail, we have a Mailing-List: https://lists.uni-wuerzburg.de/mailman/listinfo/teachingrse**
 
 - competencies.md will be published on arxiv. LaTeX tags/code is fine in here.
 - survey.md will move to a website, hence this file has to be Markdown
@@ -41,9 +45,52 @@ You will also need to install a few Python packages:
 python3 -m pip install -r requirements.txt
 ```
 
+### Bibliography
+
+We use a single, shared BibTeX bibliography file for all papers in the teaching RSE project.
+This is imported as a git submodule from [another repository](https://github.com/the-teachingRSE-project/bibliography).
+See the instructions in that repository if you need to add bibliography entries.
+
+When you first clone this repository, the bibtex folder is empty.
+To download the bibliography, run the following commands:
+
+```sh
+git submodule update --init --recursive
+git config --local submodule.recurse true
+```
+
+This will populate the folder with the contents of the remote bibliography repository.
+To modify the bibliography, you need to clone
+[the-teachingRSE-project/bibliography](https://github.com/the-teachingRSE-project/bibliography),
+commit your changes and push them. Then you can synchronize the
+local bibliography submodule by running the following commands:
+
+```sh
+git submodule update --remote bibliography
+git add bibliography
+git commit -m 'Synchronize bibliography'
+```
+
+If the remote bibliography repository is broken, you can roll back the bibliography version
+in the submodule. For example to go back 4 commits in the past, run:
+
+```sh
+cd bibliography/
+git reset HEAD~4
+git checkout .
+cd ..
+git add bibliography/
+git commit -m 'Roll back to an older version of the bibliography'
+```
+
 ### How to create a pull request
 
 - Fork this repository
+- If you clone your fork locally, run
+  ```sh
+  git submodule update --init --recursive
+  git config --local submodule.recurse true
+  ```
 - Create your changes in your fork
 - Go to the [pull requests](https://github.com/CaptainSifff/paper_teaching-learning-RSE/pulls) page of this repository and push `new pull request`
 - You can add DRAFT, or WIP to indicate work-in-progress PRs.
@@ -78,3 +125,11 @@ The first paper,
 _Foundational Competencies and Responsibilities of a Research Software Engineer_,
 is now available as a pre-print: https://arxiv.org/abs/2311.11457
 Feedback is welcome as an issue on this repository.
+
+## License
+
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+
+Each file in this repository is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+When re-using material from this repository, please attribute it with the information given in the file [attribution.md](attribution.md).
